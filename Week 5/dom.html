@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document Object Model Sample</title>
+    </head>
+<body onload ="getDateTime()">
+    <div id="dateTime"></div>
+
+    <h1 id="header" style="background-color: aqua; color: blue; letter-spacing: 18px;" onclick="someChange(this)">HI THERE</h1>
+
+
+    <script>
+        /*
+        // methods are like mini functions that need to be assigned
+        // to a variable to change the property
+
+        const header = document.createElement("h1");
+        header.innerHTML = "Hi There!";
+        document.body.append(header);
+        header.setAttribute("style", "background-color: aqua; color: blue, letter-spacing: 18px");
+        // <h1 style = ""background-color: aqua; color: blue, letter-spacing: 10px"
+            // function name(parameter, parameter)
+        header.style.fontSize = "72px"; */
+        
+        function getDateTime(){
+
+            // created date object
+            const dateAndTime = Date();
+
+            // div obj
+            const parentDiv = document.getElementById("dateTime");
+
+            //header obj (h1)
+            const h1Object = document.createElement("h1");
+
+            parentDiv.appendChild(h1Object);
+
+            h1Object.innerHTML = `Hello there! The date is ${dateAndTime}`;
+        }
+
+        function someChange(id){
+            id.style.textTransform= "lowercase";
+        }
+    </script>
+</body>
+</html>
