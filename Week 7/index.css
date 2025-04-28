@@ -1,0 +1,99 @@
+/* index.html css */
+
+/* change vh and vw? ::: mostly used for margins, padding, spacing, and widths/heights */
+*{
+    --dark-blue: #15112B;
+    --pink: #BD5B68;
+    --gray-blue: #EBE9F9;
+    font-size: 15px; /* ALL TEXT ARE FACTORS? OF 5*/
+}
+
+body{
+    background-color: var(--gray-blue);
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+}
+
+.menu{
+    background-color: var(--pink);
+    height: 75px;
+    /*display: inline-block;*/
+}
+
+.drop-button{
+    /*border-radius: 20px;*/
+    font-family: "Junge", cursive;
+    margin-top: 15px;
+    margin-left: 10px;
+    min-width: 105px;
+    font-size: 1.5rem;
+    color: var(--gray-blue);
+    border: 2px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.dropdown-content{
+    margin-left: 10px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    min-width: 125px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    font-family: "Junge", cursive;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.drop-container{
+    position: relative;
+    display: inline;
+    /*background-color: black;  //TOUCHES LEFT SIDE! */
+}
+
+.drop-container:hover .dropdown-content{
+    display: block
+}
+
+#heading{
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 200;
+    font-size: 5rem;
+    color: var(--dark-blue);
+    margin-top: 100px;
+    text-align: center;
+    line-height: 15vh;}
+
+#desc{
+    font-family: "Junge", cursive;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-top: -35px;
+}
+
+.startbtn{
+    margin-top: 25px;
+    text-align: center;
+}
+
+#start{
+    text-align: center;
+    font-family: "Junge", cursive;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    background-color: var(--pink);
+    border: 2px solid var(--dark-blue);
+    border-radius: 20px;
+    width: 240px; /*change to vw?*/
+    padding: 5px;
+
+}
+
+/* use rem for text desc? */

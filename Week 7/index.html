@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Week 7/favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Junge&family=Just+Me+Again+Down+Here&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Museum Home</title>
 </head>
+
 <body>
+    <!--navigation menu-->
+    <!--https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+
+    <!--problem: hover encompasses WHOLE nav, nest w/ header?-->
+    <nav class = "menu">
+        <div class="drop-container">
+            <button class ="drop-button">menu</button>
+            <div class="dropdown-content">
+                <a href="./index.html">Home</a>
+                <a href="./artpage.html">Art Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- line break: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br -->
+    <section class="title">
+        <h1 id="heading">Talia's <br /> Art Museum</h1>
+            <div id="desc">This gallery displays a few of my favorite artworks I made over the past years!
+            </div>
+    </section>
+
+    <section class="startbtn">
+        <a href="./artpage.html"><button id="start">start</button></a>
+    </section>
     
 </body>
 </html>
