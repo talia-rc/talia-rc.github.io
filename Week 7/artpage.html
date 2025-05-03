@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Week 7/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Week 7/favicon-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
 <body>
     <!--navigation menu-->
-    <!--https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+    <!--this code was inspired from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
     <nav class = "menu">
         <div class="drop-container">
             <button class ="drop-button">menu</button>
@@ -27,37 +27,50 @@
             </div>
         </div>
     </nav>
+    
+    <!--this code was inspired from https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
 
-    <!--https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
     <div class="scrolling-content">
         <div class="img-scroll">
             <div class="img-item">
-                <img src="/Week 7/final images/han-sooyoung(1).png" alt="fill in">
-                    <p><span>An illustration of Han Sooyoung from Omniscient Reader's Viewpoint!
-                        It is one out of the three illustrations I made for the story's main trio.
+                <img id ="image1" src="/Week 7/final images/han-sooyoung(1).png" 
+                alt="A drawing of Han Sooyoung from ORV">
+                    <p><span>An illustration of Han Sooyoung from Omniscient Reader's <br />Viewpoint!
+                        One out of a three part illustration series I made for the 
+                        story's protagonists.
                     </span></p>
             </div>
             <div class="img-item">
-                <img src="/Week 7/final images/241229(2).png" alt="fill in">
+                <img id="image2" src="/Week 7/final images/241229(2).png" 
+                alt="A drawing of Kim Dokja from ORV sitting in an empty theatre">
                     <p><span>Kim Dokja from Omniscient Reader's Viewpoint!
-                        This was the last drawing I made in 2024. The chairs 
-                        took a while to finish.
+                        This was the <br />last drawing I made in 2024. The chairs took a while to finish.
                     </span></p>
             </div>
             <div class="img-item">
-                <img src="/Week 7/final images/240819(1).png" alt="fill in">
-                    <p><span>This is the oldest drawing out of the four, but I like how it turned out even
+                <img id="image3" src="/Week 7/final images/240819(1).png" 
+                alt="A drawing of Hyein from New Jeans">
+                    <p><span>This is the oldest drawing out of the four, but I like how it <br />turned out even
                         though I can tell where it should be fixed.
                     </span></p>
             </div>
             <div class="img-item">
-                <img src="/Week 7/final images/250413(1).png" alt="fill in">
-                    <p><span>Tada! Another drawing of Kim Dokja, but made in 2025. I 
+                <img id="image4" src="/Week 7/final images/250413(1).png" 
+                alt="A drawing of Kim Dokja from ORV softly smiling">
+                    <p><span>Tada! Another drawing of Kim Dokja, but made in <br />2025. I 
                         tend to use reference photos often.
                     </span></p>
             </div>
         </div>
     </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img"> 
+    </div>
     
 </body>
+
+<script src="/Week 7/artpage.js"></script>
+
 </html>
